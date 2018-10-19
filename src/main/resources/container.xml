@@ -29,19 +29,37 @@
 	</bean>
 	
 	<!-- *** Een array, List of Set injecteren *** -->
+	<!--  
 	<bean id="helpdeskMedewerkers" class="be.vdab.HelpdeskMedewerkers">
-		<property name="namen">
+		<property name="namen"> -->
 			<!-- Je geeft de waardenlijst aan met een element list of een element set. -->
 			<!-- <list> -->
-			<set>
+			<!-- <set> -->
 				<!-- Je geeft één waarde aan met een element value. -->
+				<!-- 
 				<value>Joe</value>
 				<value>Jack</value>
 				<value>William</value>
 				<value>Averell</value>
-				<value>Joe</value>	<!-- een dubbele waarde -->
+				<value>Joe</value> -->	<!-- een dubbele waarde -->
 			<!-- </list>  -->
-			</set>
+			<!-- </set> -->
+			<!-- 
 		</property>
+	</bean>
+	-->
+	
+	<!-- *** Een Map injecteren *** -->
+	<bean id="helpdeskMedewerkers" class="be.vdab.HelpdeskMedewerkers">
+		<constructor-arg>
+			<!-- Je duidt de Map aan met een element map. -->
+			<map>
+				<!-- Je gebruikt een element entry per entry van de Map. -->
+				<entry key="Joe" value="123"/>
+				<entry key="Jack" value="456"/>
+				<entry key="William" value="789"/>
+				<entry key="Averell" value="012"/>
+			</map>
+		</constructor-arg>
 	</bean>
 </beans>
