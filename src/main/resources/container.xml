@@ -17,5 +17,14 @@
 		<property name="importData" value="c:/data/postcodes.txt"/>
 		<property name="defaultBladRichting" value="LIGGEND"/>
 	</bean>
-	<bean id="classB" class="be.vdab.ClassB"/>
+	
+	<bean id="classB" class="be.vdab.ClassB">
+		<!-- 
+			Je gebruikt per constructor parameter een element constructor-arg.
+			Je tikt bij value de te injecteren waarde. 
+			Spring injecteert de constructor parameters in dezelfde volgorde waarin jij de constructor-arg elementen schrijft.
+		 -->
+		<constructor-arg value="01/234.567.8"/>
+		<constructor-arg value="3"/>
+	</bean>
 </beans>

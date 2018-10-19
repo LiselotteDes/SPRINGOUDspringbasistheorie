@@ -34,6 +34,10 @@ public class Main {
 			System.out.println(objectA.getDefaultTaalEnLand().getDisplayName());
 			System.out.println("Bestand bestaat: " + objectA.getImportData().exists());
 			System.out.println(objectA.getDefaultBladRichting());
+			
+			ClassB objectB = context.getBean(ClassB.class);
+			System.out.println(objectB.getTelefoonNrHelpDesk());
+			System.out.println(objectB.getAantalPogingenUpdateKlant());
 		}
 	}
 }

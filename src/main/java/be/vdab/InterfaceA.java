@@ -1,6 +1,6 @@
 package be.vdab;
 
-public interface InterfaceA {
+interface InterfaceA {
 
 	String getBoodschap();
 }

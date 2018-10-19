@@ -4,7 +4,7 @@ import java.io.File;
 import java.net.URL;
 import java.util.Locale;
 
-public class ClassA implements InterfaceA {
+class ClassA implements InterfaceA {
 	
 	private String telefoonNrHelpDesk;
 	private URL koersenURL;
