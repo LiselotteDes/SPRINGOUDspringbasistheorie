@@ -38,6 +38,9 @@ public class Main {
 			ClassB objectB = context.getBean(ClassB.class);
 			System.out.println(objectB.getTelefoonNrHelpDesk());
 			System.out.println(objectB.getAantalPogingenUpdateKlant());
+			
+			// *** Een array, List of Set injecteren ***
+			System.out.println(context.getBean(HelpdeskMedewerkers.class));
 		}
 	}
 }

@@ -27,4 +27,21 @@
 		<constructor-arg value="01/234.567.8"/>
 		<constructor-arg value="3"/>
 	</bean>
+	
+	<!-- *** Een array, List of Set injecteren *** -->
+	<bean id="helpdeskMedewerkers" class="be.vdab.HelpdeskMedewerkers">
+		<property name="namen">
+			<!-- Je geeft de waardenlijst aan met een element list of een element set. -->
+			<!-- <list> -->
+			<set>
+				<!-- Je geeft één waarde aan met een element value. -->
+				<value>Joe</value>
+				<value>Jack</value>
+				<value>William</value>
+				<value>Averell</value>
+				<value>Joe</value>	<!-- een dubbele waarde -->
+			<!-- </list>  -->
+			</set>
+		</property>
+	</bean>
 </beans>
