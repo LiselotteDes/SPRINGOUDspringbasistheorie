@@ -41,6 +41,9 @@ public class Main {
 			
 			// *** Een array, List of Set injecteren ***
 			System.out.println(context.getBean(HelpdeskMedewerkers.class));
+			
+			// *** Een object van een eigen class injecteren ***
+			System.out.println(context.getBean(ClassA.class).getWebMasterEMailAdres());
 		}
 	}
 }

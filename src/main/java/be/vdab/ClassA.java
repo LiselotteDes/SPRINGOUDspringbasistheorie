@@ -11,6 +11,7 @@ class ClassA implements InterfaceA {
 	private Locale defaultTaalEnLand;
 	private File importData;
 	private BladRichtingInPrinter defaultBladRichting;
+	private EMailAdres webMasterEMailAdres;
 	
 	@Override
 	public String getBoodschap() {
@@ -56,6 +57,14 @@ class ClassA implements InterfaceA {
 
 	public void setDefaultBladRichting(BladRichtingInPrinter defaultBladRichting) {
 		this.defaultBladRichting = defaultBladRichting;
+	}
+	
+	public EMailAdres getWebMasterEMailAdres() {
+		return webMasterEMailAdres;
+	}
+	
+	public void setWebMasterEMailAdres(EMailAdres webMasterEMailAdres) {
+		this.webMasterEMailAdres = webMasterEMailAdres;
 	}
 
 }

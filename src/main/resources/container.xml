@@ -16,6 +16,7 @@
 		<property name="defaultTaalEnLand" value="nl_BE"/>
 		<property name="importData" value="c:/data/postcodes.txt"/>
 		<property name="defaultBladRichting" value="LIGGEND"/>
+		<property name="webMasterEMailAdres" value="SpringIntVeld@vdab.be"/>
 	</bean>
 	
 	<bean id="classB" class="be.vdab.ClassB">
