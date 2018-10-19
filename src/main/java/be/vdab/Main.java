@@ -44,6 +44,9 @@ public class Main {
 			
 			// *** Een object van een eigen class injecteren ***
 			System.out.println(context.getBean(ClassA.class).getWebMasterEMailAdres());
+			
+			// *** Converter classes ***
+			System.out.println(context.getBean(ClassA.class).getWebsiteGestart());
 		}
 	}
 }

@@ -17,6 +17,7 @@
 		<property name="importData" value="c:/data/postcodes.txt"/>
 		<property name="defaultBladRichting" value="LIGGEND"/>
 		<property name="webMasterEMailAdres" value="SpringIntVeld@vdab.be"/>
+		<property name="websiteGestart" value="2008-07-31"/>
 	</bean>
 	
 	<bean id="classB" class="be.vdab.ClassB">
@@ -74,4 +75,14 @@
 			</props>
 		</constructor-arg>
 	</bean>
+	
+	<!-- *** Converter classes *** -->
+	<bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">
+		<property name="converters">
+			<list>
+				<bean class="be.vdab.converters.StringToDateConverter"/>
+			</list>
+		</property>
+	</bean>
+	
 </beans>
